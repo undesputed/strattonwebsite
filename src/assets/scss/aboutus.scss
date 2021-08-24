@@ -1,0 +1,62 @@
+.aboutus-header{
+    padding: 0 80px !important;
+    background: #7fbf8d;
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+
+    .hero{
+        padding : 15px;
+        text-transform: uppercase;
+
+    }
+}
+
+.aboutus-banner{
+    background: #badfcd;
+    width: 100%;
+    .container-fluid{
+        padding: 0;
+        margin: 0;
+    }
+
+    .container{
+        padding: 0;
+        margin: 0;
+    }
+
+    .aboutus-tagline-section{
+        // width: 45%;
+        // display: inline-block;
+
+        .aboutus-banner-body{
+            margin-top: 20px;
+            position: relative;
+
+            .support{
+                color: #f68e56;
+                font-size: 23px;
+                font-weight: bold;
+            }
+
+            .celebrate {
+                color: #f68e56;
+                font-size: 23px;
+                font-weight: bold;
+            }
+        }
+    }
+    .aboutus-tagline{
+        display: inline-block;
+        width: 45%;           
+    }
+
+    .aboutus-image{
+        width: 55%;
+        display: inline-block;
+        vertical-align: top;
+        img{
+            width: 101.3%;
+        }
+    }
+}

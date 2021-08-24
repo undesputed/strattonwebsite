@@ -1,0 +1,52 @@
+.banner-section {
+    background: #badfcd;
+    width: 100%;
+
+    .tagline-section {
+        width: 45%;
+        display: inline-block;
+
+        .tagline-body {
+            margin-top: 20px;
+            position: relative;
+
+            .tagline {
+                font-size: 9rem !important;
+                font-weight: 900;
+                display: block;
+                text-align: left;
+                line-height: 0.8;
+                padding: 0 90px;
+                margin-top: 70px;
+            }
+
+            .tagline-content {
+                font-size: 20px;
+                display: block;
+                padding: 0 90px;
+                text-align: justify;
+            }
+
+            .what {
+                color: #fff;
+                display: inline;
+                font-family: "Helvetica Neue LT Std Condensed";
+            }
+
+            .story {
+                color: #f68e56;
+                font-family: "Helvetica Neue LT Std Blck Condensed";
+            }
+        }
+    }
+
+    .banner-image {
+        display: inline-block;
+        vertical-align: top;
+        width: 55%;
+
+        img {
+            width: 101.3%;
+        }
+    }
+}
