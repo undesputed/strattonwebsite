@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import Icon from '../Icon/icon.component';
 import { SearchAlt } from "styled-icons/boxicons-regular";
 import { CartAlt } from "styled-icons/boxicons-regular";

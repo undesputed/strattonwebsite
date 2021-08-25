@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import * as React from 'react';
 import ButtonComp from "../../common/Button/button.component";
 import HeaderSection from "../../common/Navigation/header.component";
 import Navigation from "../../common/Navigation/navigation.component";

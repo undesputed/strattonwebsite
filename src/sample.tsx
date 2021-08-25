@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import * as React from 'react';
 import axios from 'axios';
 // https://randomuser.me/api
 
@@ -34,12 +34,12 @@ const getFullUserName = (userInfo: UserInfo) => {
     return `${first} ${last}`;
 }
 const App: React.FC = () => {
-    const [counter, setCounter] = useState(0); 
-    const [nextPageNumber, setNextPageNumber] = useState(1);
-    const [userInfos, setUserInfos] = useState<any>([]);
-    const [randomUserDataJSON, setRandomUserDataJSON] = useState('');
+    const [counter, setCounter] = React.useState(0); 
+    const [nextPageNumber, setNextPageNumber] = React.useState(1);
+    const [userInfos, setUserInfos] = React.useState<any>([]);
+    const [randomUserDataJSON, setRandomUserDataJSON] = React.useState('');
 
-    useEffect(() => {
+    React.useEffect(() => {
         fetchNextUser();
     }, []);
 
