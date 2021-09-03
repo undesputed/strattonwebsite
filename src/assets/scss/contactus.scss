@@ -1,0 +1,69 @@
+.contactus-section{
+    position: relative;
+    
+}
+
+.contact-1{
+    .w-100{
+        height: 90vh;
+        max-width: 1980px;
+        width: 100%;
+        
+        .contact-banner{
+            background: url('../images/backgrounds/contactus.png');
+            background-repeat: no-repeat;
+            background-size: covert;
+            background-position: cover;
+            height: 100vh;
+            width: 100%;
+        }
+    }
+}
+
+.contact-2{
+    .w-100{
+        background: url('../images/backgrounds/green background.png');
+        max-width: 1980px;
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        flex-direction: row;
+
+        .left{
+            width: 60%;
+            position: relative;
+
+            .my-card{
+                background: #f8fcfa;
+                border-radius: 20px;
+                margin-top: 20px;
+                padding: 15px;
+                color: #1a454a; 
+                display: flex;
+                flex-direction: row;
+                width: 48rem;
+
+                .left{
+                    width: 25%;
+                }
+
+                .right{
+                    width: 75%;
+                }
+            }
+        }
+
+        .right{
+            width: 40%;
+            position: relative;
+
+            .my-card{
+                background: #aadfd7;
+                height: 40vh;
+                width: 40%;
+                border-radius: 20px;
+            }
+        }
+    }
+
+}

@@ -11,6 +11,7 @@
     "build-prod": "webpack --mode production",
     "watch": "webpack --watch",
     "serve": "cd dist && live-server",
+    "exec": "webpack-dev-server --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -25,6 +26,7 @@
     "react-bootstrap": "^1.6.1",
     "react-dom": "^17.0.2",
     "react-hot-loader": "^4.13.0",
+    "react-multi-carousel": "^2.6.5",
     "react-router-dom": "^5.2.0",
     "styled-components": "^5.3.1",
     "styled-icons": "^10.37.0"
@@ -38,6 +40,7 @@
     "@types/react": "^17.0.19",
     "@types/react-dom": "^17.0.9",
     "@types/react-router-dom": "^5.1.8",
+    "@types/react-slick": "^0.23.5",
     "babel-loader": "^8.2.2",
     "css-loader": "^6.2.0",
     "file-loader": "^6.2.0",

@@ -12,8 +12,7 @@ const config = {
     filename: 'bundle.js'
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.(js|jsx)$/,
         use: 'babel-loader',
         exclude: /node_modules/
@@ -35,13 +34,17 @@ const config = {
         use: [
           'style-loader',
           'css-loader',
-          'sass-loader'
+          'sass-loader',
         ]
       },
       {
-        test: /\.(jpg|jpeg|png|gif|mp3|svg)$/,
-        use: 'file-loader'
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       },
+      // {
+      //   test: /\.(jpg|jpeg|png|gif|mp3|svg)$/,
+      //   use: 'file-loader'
+      // },
     ]
   },
   resolve: {
@@ -57,8 +60,11 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      templateContent: ({ htmlWebpackPlugin }) => '<!DOCTYPE html><html><head><meta charset=\"utf-8\"><title>' + htmlWebpackPlugin.options.title + '</title></head><body><div id=\"app\"></div></body></html>',
+      templateContent: ({
+        htmlWebpackPlugin
+      }) => '<!DOCTYPE html><html><head><meta charset=\"utf-8\"><title>' + htmlWebpackPlugin.options.title + '</title></head><body><div id=\"app\"></div></body></html>',
       filename: 'index.html',
+      favicon: "./src/assets/images/logo/LOGO_.png",
     }),
   ],
 };
